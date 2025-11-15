@@ -1,0 +1,265 @@
+@charset "utf-8";
+body{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+}
+a{
+    color: #f30;
+}
+html *,
+::before,
+::after{
+    box-sizing: border-box;
+}
+html{
+    font-style: 14px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+@media (min-width: 768px){
+    html{font-size: 16px;
+    }
+}
+
+h2{
+    text-align: center;
+    font-family: "Stick", sans-serif;
+}
+/*ヘッダー*/
+.header{
+    background: #8DE290;
+}
+@media (min-width:768px){
+.header-container{
+    margin: 0 auto;
+    padding: 0 20px;
+    min-width: 1040px;
+}
+}
+.header-logo{
+    margin: 0;
+    padding-left: 15px;
+    font-size: 0;
+    line-height: 0;
+}
+.header-logo img{
+    width: 130px;
+}
+@media (min-width:768px) {
+    .header-logo{
+        padding: 0;
+    }
+    .header-logo img{
+        width: 180px;
+    }    
+}
+.sitetitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (min-width:768px){
+    .sitetitle{
+        display: block;
+        padding: 30px 0 0 0;
+    }
+}
+@media(min-width:768px){
+    .navbtn{
+        display: none;
+    }
+}
+.header-nav{
+    display: flex;
+    font-display: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-nav .collapse{
+    display: none;
+}
+.header-nav li a{
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #000;
+}
+@media(min-width:768px){
+    .header-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+.header-nav li a{
+    padding: 6px 20px 2px 20px;
+}
+.header-nav li a:hover{
+    opacity: 0.8;
+}
+}
+
+/*ヒーロー*/
+.hero-container{
+    position: relative;
+}
+/*ヒーロー画像*/
+.hero-kotoba{
+    width: 260px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130px ,-53px);
+}
+@media(min-width:768px){
+    .hero-kotoba{
+        width: 400px;
+        transform: translate(-200px,-82px);
+    }
+}
+/*ホームメイン*/
+.home .main-container{
+    padding: 90px 4%;
+}
+@media (min-width:768px){
+    .home .main-container{
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 40px 20px 0 20px;
+    }
+}
+/*フッター*/
+.footer{
+    background: #707070;
+}
+/*こだわり*/
+
+.kodawari{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 45px 0;
+}
+@media (min-width:768px){
+    .kodawari{
+        flex-direction: row;
+    }
+}
+.kodawari-image{
+    flex: 0 0 45%;
+    margin-right: 15px;
+    position: relative;
+}
+.kodawari-text{
+    flex: auto;
+}
+.kodawari-text p{
+    display: block;
+}
+.info{
+    text-align: center;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu .menu-img img{
+    border-radius: 50%;
+}
+.menu .menu-img h3{
+    text-align: center;
+    color: #000;
+    text-decoration: none; 
+}
+a{
+    text-decoration: none;
+}
+.menu .menu-img a:hover{
+    opacity: .8;
+}
+.ookina{
+    padding-top: 40px;
+}
+dl{
+    display: flex;
+    margin: 0;
+    padding: 20px 0;
+    border-top: 1px solid #000;
+}
+.knowledge-naiyou{
+    padding: 20px;
+    background: #cccc99;
+    border-radius: 20px;
+}
+.knowledge-naiyou dt img{
+    max-width: 300px;
+    height: auto;
+}
+@media(min-width:768px){
+    .knowledge-naiyou{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+}
+dd a{
+    display: block;
+    justify-content: center;
+    padding: 0;
+    color: #000;
+}
+dl a:hover{
+    opacity: .8;
+}
+dd{
+    display: grid;
+    place-items: center;
+}
+.knowledge-container h2{
+    padding: 60px 0 0 0 ;
+}
+.info{
+    padding: 60px;
+}
+.footer-container {
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+.footer-container h1 a{
+    text-align: center;
+    color: #fff;
+}
+.footer-container p:nth-of-type(2){
+    color: #000;
+}
+.knowledge-naiyou dl{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:768px) {
+    .knowledge-naiyou dl{
+        flex-direction: row;}
+    .knowledge-naiyou dd a{
+        text-align: left;
+    }
+}
+.info{
+    position: relative;
+    padding-bottom: 60%;
+    height: 0;
+    overflow: hidden;
+}
+/*.info iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}*/
+.knowledge-naiyou a{
+    color: #000;
+}
